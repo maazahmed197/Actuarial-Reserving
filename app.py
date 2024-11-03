@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.express as px
 import plotly.graph_objects as go
 from streamlit_agraph import agraph, Node, Edge, Config
 import graphviz
@@ -86,7 +85,7 @@ def chapter_2():
     st.header("Chapter 2: The Claims Process and Estimation of Unpaid Claims")
     st.write("""
     The estimation of unpaid claims involves several components:
-    
+
     1. **Case Outstanding**: Known claims with an estimate based on current information.
     2. **Provision for Future Development on Known Claims**: Adjustments for further development.
     3. **Estimate for Reopened Claims**: Reserves for claims that may reopen.
