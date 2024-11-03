@@ -92,7 +92,6 @@ def chapter_2():
     4. **Provision for IBNR (Incurred But Not Reported)**: Claims that have occurred but are not reported.
     5. **Provision for Claims in Transit**: Claims that are in the process of reporting.
 
-    The chart below visualizes these five estimates.
     """)
 
     # st.title("Claims Estimation Process")
