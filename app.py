@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.graph_objects as go
+# import plotly.graph_objects as go
 # from streamlit_agraph import agraph, Node, Edge, Config
 # import graphviz
 import numpy as np
@@ -209,73 +209,73 @@ def chapter_2():
     # st.title("Components of Unpaid Claims")
     # st.graphviz_chart(graph)
 
-    components = [
-        "Case Outstanding",
-        "Provision for Future Development",
-        "Estimate for Reopened Claims",
-        "Provision for IBNR",
-        "Provision for Claims in Transit"
-    ]
+    # components = [
+    #     "Case Outstanding",
+    #     "Provision for Future Development",
+    #     "Estimate for Reopened Claims",
+    #     "Provision for IBNR",
+    #     "Provision for Claims in Transit"
+    # ]
 
-    # Define colors for each component
-    colors = [
-        "lightpink",
-        "lightpink",
-        "lightpink",
-        "lightpink",
-        "lightpink"
-    ]
+    # # Define colors for each component
+    # colors = [
+    #     "lightpink",
+    #     "lightpink",
+    #     "lightpink",
+    #     "lightpink",
+    #     "lightpink"
+    # ]
 
-    # Calculate angles for positioning
-    angles = np.linspace(0, 2 * np.pi, len(components), endpoint=False)
+    # # Calculate angles for positioning
+    # angles = np.linspace(0, 2 * np.pi, len(components), endpoint=False)
 
-    # Create a Scatter plot
-    fig = go.Figure()
+    # # Create a Scatter plot
+    # fig = go.Figure()
 
-    # Add the central node
-    fig.add_trace(go.Scatter(
-        x=[0], y=[0],
-        mode='text+markers',
-        marker=dict(size=150, color='lightblue'),
-        text=["Components of Unpaid Claims"],
-        textposition="middle center",
-        textfont=dict(size=18, color='white'),
-        showlegend=False
-    ))
+    # # Add the central node
+    # fig.add_trace(go.Scatter(
+    #     x=[0], y=[0],
+    #     mode='text+markers',
+    #     marker=dict(size=150, color='lightblue'),
+    #     text=["Components of Unpaid Claims"],
+    #     textposition="middle center",
+    #     textfont=dict(size=18, color='white'),
+    #     showlegend=False
+    # ))
 
-    # Add each component node
-    for angle, component, color in zip(angles, components, colors):
-        x = np.cos(angle)  # X position on the circle
-        y = np.sin(angle)  # Y position on the circle
-        # Add a marker for each component
-        fig.add_trace(go.Scatter(
-            x=[x], y=[y],
-            mode='markers',
-            marker=dict(size=75, color=color),
-            showlegend=False
-        ))
-        fig.add_trace(go.Scatter(
-            x=[0, x], y=[0, y],
-            mode='lines+text',
-            line=dict(color='lightpink'),
-            text=[None, component],
-            textposition="top center",
-            textfont=dict(size=16, color='white'),
-            showlegend=False
-        ))
+    # # Add each component node
+    # for angle, component, color in zip(angles, components, colors):
+    #     x = np.cos(angle)  # X position on the circle
+    #     y = np.sin(angle)  # Y position on the circle
+    #     # Add a marker for each component
+    #     fig.add_trace(go.Scatter(
+    #         x=[x], y=[y],
+    #         mode='markers',
+    #         marker=dict(size=75, color=color),
+    #         showlegend=False
+    #     ))
+    #     fig.add_trace(go.Scatter(
+    #         x=[0, x], y=[0, y],
+    #         mode='lines+text',
+    #         line=dict(color='lightpink'),
+    #         text=[None, component],
+    #         textposition="top center",
+    #         textfont=dict(size=16, color='white'),
+    #         showlegend=False
+    #     ))
 
-    fig.update_layout(
-        title="Components of Unpaid Claims",
-        showlegend=False,
-        xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-        yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-        height=600,
-        width=600
-    )
+    # fig.update_layout(
+    #     title="Components of Unpaid Claims",
+    #     showlegend=False,
+    #     xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+    #     yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+    #     height=600,
+    #     width=600
+    # )
 
-    # Render the Plotly chart in Streamlit
-    st.title("Components of Unpaid Claims")
-    st.plotly_chart(fig)
+    # # Render the Plotly chart in Streamlit
+    # st.title("Components of Unpaid Claims")
+    # st.plotly_chart(fig)
 
     # Define nodes for the central concept and the five components
     # nodes = [
