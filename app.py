@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import plotly.graph_objects as go
+# import plotly.graph_objects as go
 # from streamlit_agraph import agraph, Node, Edge, Config
 # import graphviz
 import numpy as np
