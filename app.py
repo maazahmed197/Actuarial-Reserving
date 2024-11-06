@@ -389,7 +389,7 @@ def chapter_2():
 
 # Main App
 def main():
-    st.title("The Journey of a Claim")
+    st.title("Estimation of Unpaid Claims")
     st.sidebar.title("Chapters")
     chapter = st.sidebar.radio("Go to:", ["Introduction", "Chapter 1: Understanding Reserves", 
                                           "Chapter 2: Claims Process and Estimation"])
